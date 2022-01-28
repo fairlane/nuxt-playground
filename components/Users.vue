@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { getRuntimeConfig } from '../config/settings'
+import { listUsers } from '../service/userService'
 export default {
   name: 'Users',
   data() {
@@ -21,9 +21,8 @@ export default {
     }
   },
   async mounted() {
-    let response = await fetch(getRuntimeConfig().apiUrl + '/list-users');
-    this.users = await response.json();
-    
+    this.users = await listUsers();
+    console.log(`I'm mounted and fetched `);
     console.log(`I'm mounted and fetched `);
   }
 }

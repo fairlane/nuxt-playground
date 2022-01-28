@@ -1,13 +1,13 @@
 <template>
-  <users/>
+  <layout/>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import Users from '~/components/Users.vue';
+import Layout from '~/components/Layout.vue';
 
 export default Vue.extend({
-  components: { Users },
+  components: {Layout},
   name: 'IndexPage'
 })
 </script>

@@ -26,8 +26,6 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^27.4.4",
     "jest": "^27.4.4",
-    "less": "^4.1.2",
-    "less-loader": "^10.2.0",
     "sass": "^1.49.0",
     "sass-loader": "^10.2.1",
     "ts-jest": "^27.1.1",
